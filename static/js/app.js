@@ -29,7 +29,7 @@ function buildCharts(sample) {
 				title: "'Bar' Chart",
 				};
  
-			var d = [{values:data["sample_values"].slice(0, 10),labels:data["otu_ids"].slice(0, 10),text:data["otu_labels"],hoverinfo:"text",type: "pie"}]
+			var d = [{values:data["sample_values"].slice(0, 10),labels:data["otu_ids"].slice(0, 10),hovertext:data["otu_labels"],type: "pie"}]
 			console.log(d)
             Plotly.newPlot("pie", d,layout);
 			
